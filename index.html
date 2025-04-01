@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="login pt-5 d-flex justify-content-center align-items-center vh-100">
+        <div class="container">
+            <form action="" class="p-5 rounded-4 shadow-lg my-5 w-75 mx-auto">
+                <h2 class="text-center text-uppercase my-3 fw-bold">Login</h2>
+                <div class="row justify-content-center">
+                    <div class="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" oninput="emailValidation()">
+                            <label for="userEmail">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="userPassword" placeholder="Password" oninput="passValidation()">
+                            <label for="userPassword">Password</label>
+                        </div>
+                    </div>
+                </div>
+                <h2 class=" text-center fs-5 mt-3">Don't have account ? <a class="" href="Pages/sign-up.html">Please sign up.</a>
+                </h2>
+                <p id="warningMss" class="d-none text-bg-warning text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i>If you don't have account please sign up before </p>
+                <p id="validation" class="d-none text-bg-danger text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i> All inputs is required</p>
+
+              
+                <button" id="loginBtn" class="btn btn-outline-dark col-12 my-4 fw-bold" F type="button">LOGIN</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

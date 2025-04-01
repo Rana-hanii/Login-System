@@ -1,0 +1,57 @@
+body{
+    background-image: url(../Images/7.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100% 100%;
+    
+}
+
+h2{
+    color: #27178C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+form{
+    backdrop-filter: blur(40px);
+}
+a{
+    text-decoration: none;
+    color: #2a363a;
+}
+a:hover{
+    text-decoration: none;
+    color: #39474a;
+}
+
+.btn:hover:hover{
+    color: white !important;
+}
+.bg-transparent{
+    backdrop-filter: blur(40px);
+}
+.cont{
+    width: 800px;
+    backdrop-filter: blur(40px);
+}
+p{
+
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+@media (max-width: 576px){
+    .w-75{
+        width: 94% !important;
+    }
+}
+.btn-outline-dark{
+    color: #27178C!important;
+    background-color: transparent!important;
+    border-color: #27178C!important;
+}
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #27178C!important;
+    border-color: var(--bs-btn-hover-border-color);
+}

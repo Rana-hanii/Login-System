@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <section class="login pt-5 d-flex justify-content-center align-items-center vh-100">
+        <div class="container">
+            <form action="" class="p-5 rounded-4 shadow-lg my-5 w-75 mx-auto">
+                <h2 class="text-center text-uppercase my-3">Sign up</h2>
+                <div class="row justify-content-center">
+                    <div class="forrm">
+                        <div class="form-floating mb-3">
+                            <input oninput="nameValidation()" id="userName" type="text" class="form-control" placeholder="User Name">
+                            <label for="userName">Enter your name</label>
+                        </div>
+                        <p id="nameInvalid" class="d-none text-bg-danger text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i> Name must contain characters only</p>
+                        <div class="form-floating mb-3">
+                            <input oninput="emailValidation()" id="userEmail" type="email" class="form-control" placeholder="name@example.com">
+                            <label for="userEmail">Enter your email address</label>
+                        </div>
+                        <p id="emailInvalid" class="d-none text-bg-danger text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i> Email must be:name@example.com</p>
+                        <div class="form-floating">
+                            <input oninput=" passwordValidation()" id="userPassword" type="password" class="form-control mb-3" placeholder="Password">
+                            <label for="userPassword">Enter your Password</label>
+                        </div>
+                        <p id="passwordInvalid" class="d-none text-bg-danger text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i> Password must be at least 8 letters</p>
+                    </div>
+                </div>
+                <h2 class=" text-center fs-5 mt-3">Already have account ? <a class=""
+                        href="../index.html">Login.</a></h2>
+                        <p id="successMss" class="d-none text-bg-success text-center"><i class="fa-solid fa-check-double px-3"></i> Please press on " login "</p>
+                        <p id="warningMss" class="d-none text-bg-warning text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i> Please enter your data</p>
+                        <p id="repeatedMss" class="d-none text-bg-warning text-center"><i class="fa-solid fa-triangle-exclamation px-3"></i> Email is repeated</p>
+
+                <button onclick="getUserdata()" id="signUpbtn" class="btn btn-outline-dark  my-4 col-12 fw-bold" F type="button">SIGN
+                    UP</button>
+            </form>
+        </div>
+    </section>
+    <script src="../js/sign-up.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
