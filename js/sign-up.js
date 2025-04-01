@@ -100,7 +100,7 @@ function passwordValidation() {
     userPassword.classList.remove("is-valid");
     passwordInvalid.classList.replace("d-none", "d-block");
     return false;
-  }
+  } 
 }
 // clear inputs after adding................
 // function clearInputs() {
