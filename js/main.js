@@ -11,6 +11,7 @@ loginBtn.addEventListener("click", () => {
   passValidation()
   // checkLogin();
 });
+
 function checkLogin() {
   let storedUsers = JSON.parse(localStorage.getItem("userData")) || [];
   for (let i = 0; i < storedUsers.length; i++) {
