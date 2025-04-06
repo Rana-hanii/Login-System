@@ -121,6 +121,7 @@ function isRepeated() {
     // console.log(userData[i].email === userEmail.value);
     if (userData[i].email === userEmail.value) {
       console.log("false");
+      successMss.classList.replace("d-block", "d-none");
       repeatedMss.classList.replace("d-none", "d-block");
       return false;
     }
