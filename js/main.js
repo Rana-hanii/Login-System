@@ -23,6 +23,7 @@ function checkLogin() {
       // Login successful
       console.log("Login successful!");
       window.location.assign("./Pages/home.html"); 
+      warningMss.classList.replace("d-block", "d-none");
       return;
     }else{
       warningMss.classList.replace("d-none", "d-block");
